@@ -38,7 +38,7 @@ client.on(Events.GuildMemberUpdate, (oldMember, newMember) => {
     const roleInfo = roles[role.id];
     if (roleInfo) {
       console.log(`Welcoming new ${roleInfo.male?"brother":"sister"}: ${newMember.user.tag} assigned role ${role.id}`);
-      newMember.guild.channels.cache.get(roleInfo.channelID)?.send(`Give salam to our new ${roleInfo.male?"brother":"sister"} <@${newMember.id}>!`);
+      newMember.guild.channels.cache.get(roleInfo.channelID)?.send(`Send salam to our new ${roleInfo.male?"brother":"sister"} <@${newMember.id}>!`);
     }
   });
 });
